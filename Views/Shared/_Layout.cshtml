@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]The Band</title>
+
+    <link rel="icon" href="~/image/home/bhv_logo.png" type="image/x-icon" />     @* icon trên tiêu đề web*@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />  @*Khai báo file css sử dụng*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />    @*Khai báo file css sử dụng*@
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" /> @*Khai báo file css sử dụng*@
+    <link rel="stylesheet" href="~/css/style.css" />                         @*Khai báo file css sử dụng*@
+    <link rel="stylesheet" href="~/fonts/themify-icons/themify-icons.css" /> @*Khai báo bộ icon sử dụng*@
+</head>
+
+<body>
+    <main>
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>                 @*Khai báo file javascript sử dụng*@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> @*Khai báo file javascript sử dụng*@
+    <script src="~/js/site.js" asp-append-version="true"></script>          @*Khai báo file javascript sử dụng*@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
